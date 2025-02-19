@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0px;
+            font-family: 微软雅黑;
+            /*list-style: none;*/
+        }
+        body{
+            background-image: url("./p/微信图片_20250218141541.jpg");
+            background-repeat: no-repeat;
+            background-size: 1500px;
+            background-position: 190px 0px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .bt_side_t{
+            border: none;
+            background-color: transparent;
+        }
+        .bt_side{
+            border: none;
+            background-color: transparent;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+        }
+        .side_left{
+            width:164px;
+            border-right:1px solid #30161c;
+            height: 100%;
+            padding: 10px 13px;
+            float: left;
+            display: block;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+        .png_top{
+            width: 24px;
+            height: 24px;
+        }
+        .png_other{
+            width: 22px;
+            height: 22px;
+            margin-right: 5px;
+        }
+        .side_t{
+            height: 42px;
+            width: 133.67px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .side_{
+            height: 42px;
+            width: 133.67px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .side_:hover{
+            border: 1px solid #63bbd059;
+            border-radius: 10px 10px 10px 10px;
+            background-color: #63bbd059;
+        }
+        .top_{
+            width: 800px;
+            height: 40px;
+            padding: 10px;
+            float:left;
+            display: flex;
+            align-items: center;
+            margin-left: 500px;
+            margin-bottom: 500px;
+        }
+        .top_top{
+            margin-left: 30px;
+            border-right: 1px solid #30161c;
+            padding-right:10px ;
+            font-size: 14px;
+        }
+        .top_top .fu{
+            display: flex;
+            align-items: center;
+            width: 56px;
+        }
+        .top_top .tw{
+            display: flex;
+            align-items: center;
+            width: 28px;
+        }
+        .top_top:hover{
+            color: #63bbd0;
+        }
+        #denglu{
+            margin-left: 50px;
+        }
+        .pc_phone{
+            width: 20px;
+            height: 20px;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+        .mid_{
+            width: 500px;
+            display: flex;
+            align-items: center;
+            margin-left: 250px;
+        }
+        .search{
+            height: 25px;
+            width: 180px;
+            border: 1px solid black;
+            border-radius: 10px 0px 0px 10px;
+        }
+        .left_search{
+            width: 45px;
+            height: 27px;
+            background: #63bbd0;
+            margin-left: -2px;
+            border: 1px solid #63bbd0;
+            border-radius: 0px 10px 10px 0px;
+        }
+        .bt_search{
+            border: none;
+            background-color: transparent;
+        }
+        .left_search_img{
+            width: 20px;
+            height: 25px;
+            margin: 1px 10px;
+        }
+        /*video:hover{*/
+        /*    animation-play-state:paused ;*/
+        /*}*/
+        .vd_box{
+            width: 1000px;
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+        .vd_text{
+            font-size: 18px;
+        }
+        .commend_{
+            width: 300px;
+            height: 300px;
+        }
+        .vd_box_f{
+            float: left;
+            background-color: white;
+        }
+        .img_vd{
+            width: 300px;
+            height: 300px;
+        }
+        .diyu{
+            width: 1200px;
+            height: 127px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            margin-left: 350px;
+            color: #ffdfe0;
+        }
+        .diyu div{
+            width: 66px;
+            height: 127px;
+            background: url("./p/dybg.png");
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            padding-top: 20px;
+            padding-left: 12px;
+            font-size: 20px;
+        }
+        .diyu ul{
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+        .diyu ul li{
+            background: url("./p/dbg.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 96px;
+            height: 96px;
+            line-height: 96px;
+            text-align: center;
+            writing-mode: vertical-lr;
+            /*display: flex;*/
+            /*align-items: center;*/
+            color: #fff;
+            font-size: 14px;
+        }
+        .map_ img{
+            margin-top: 150px;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+<body>
+<!--<script>-->
+<!--    const video = document.getElementById('');-->
+<!--    video.addEventListener('mouseenter',function () {-->
+<!--        this.play();-->
+<!--    });-->
+<!--    video.addEventListener('mouseleave',function () {-->
+<!--        this.pause();-->
+<!--    });-->
+<!--</script>-->
+
+<div class="side_left">
+    <div class="side_t">
+        <button class="bt_side_t"><img src="./p/list.png" alt="" class="png_top"></button>
+    </div>
+    <div>
+        <a href="首页.html">
+            <div class="side_">
+                <button class="bt_side">
+                    <img src="./p/首页.png" alt="" class="png_other">
+                    <span>首页</span>
+                </button>
+            </div>
+        </a>
+        <div class="side_">
+            <button class="bt_side">
+                <img src="./p/用户.png" alt="" class="png_other">
+                <span>我的</span>
+            </button>
+        </div>
+        <div class="side_">
+            <button class="bt_side">
+                <img src="./p/AI智能助手.png" alt="" class="png_other">
+                <span>智能管家</span>
+            </button>
+        </div>
+        <a href="发现.html">
+            <div class="side_">
+                <button class="bt_side">
+                    <img src="./p/发现.png" alt="" class="png_other">
+                    <span>发现</span>
+                </button>
+            </div>
+        </a>
+        <div class="side_">
+            <button class="bt_side">
+                <img src="./p/_酒店.png" alt="" class="png_other">
+                <span>酒店预定</span>
+            </button>
+        </div>
+        <div class="side_">
+            <button class="bt_side">
+                <img src="./p/购票.png" alt="" class="png_other">
+                <span>出行购票</span>
+            </button>
+        </div>
+        <div class="side_">
+            <button class="bt_side">
+                <img src="./p/门票.png" alt="" class="png_other">
+                <span>晋风古韵</span>
+            </button>
+        </div>
+        <div class="side_">
+            <button class="bt_side">
+                <img src="./p/消息.png" alt="" class="png_other">
+                <span>消息</span>
+            </button>
+        </div>
+    </div>
+</div>
+<div class="connect_">
+    <div class="bk_img">
+        <div class="top_">
+             <div class="mid_">
+                <form action="">
+                    <input type="text" placeholder="      请输入想了解内容" class="search">
+                </form>
+                <button class="bt_search">
+                    <div class="left_search">
+                    <img src="./p/搜索.png" alt="" class="left_search_img">
+                    </div>
+                </button>
+            </div>
+            <div class="top_top" id="denglu">
+                <span class="tw">登录</span>
+            </div>
+            <div class="top_top">
+                <span class="tw">注册</span>
+            </div>
+            <div class="top_top">
+                <span class="fu">联系客服</span>
+            </div>
+            <div>
+                <img src="./p/手机号.png" alt="" class="pc_phone">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="diyu">
+    <div>晋唐<br>遗风
+<!--        三晋<br>大地 -->
+    </div>
+    <ul>
+        <li>太 · 原</li>
+        <li>大 · 同</li>
+        <li>阳 · 泉</li>
+        <li>长 · 治</li>
+        <li>晋 · 城</li>
+        <li>朔 · 州</li>
+        <li>忻 · 州</li>
+        <li>吕 · 梁</li>
+        <li>晋 · 中</li>
+        <li>临 · 汾</li>
+        <li>运 · 城</li>
+    </ul>
+    </div>
+</div>
+<div class="map_">
+    <img src="./p/微信图片_20250219120826.jpg" alt="">
+</div>
+<!--    <div class="vd_box">-->
+<!--        <div><span class="vd_text">视频推荐</span></div>-->
+<!--        <div class="vd_box_f">-->
+<!--&lt;!&ndash;            <img src="./p/微信图片_20250218001254.jpg" alt="" class="img_vd" id="xc">&ndash;&gt;-->
+<!--            <a href="./v/WeChat_20250217162602.mp4" target="_blank">-->
+<!--                <video src="./v/WeChat_20250217162602.mp4" class="commend_" autoplay loop muted></video>-->
+<!--            </a>-->
+<!--&lt;!&ndash;            <span>浑源，这座不起眼的晋北小县城，来完我真的后悔了</span>&ndash;&gt;-->
+<!--        </div>-->
+<!--        <div class="vd_box_f">-->
+<!--            <a href="./v/WeChat_20250217162623.mp4" target="_blank"><video src="./v/WeChat_20250217162623.mp4" class="commend_" autoplay loop ></video></a>-->
+<!--            <span></span>-->
+<!--        </div>-->
+<!--        <div class="vd_box_f">-->
+<!--            <a href="./v/WeChat_20250217162627.mp4" target="_blank"><video src="./v/WeChat_20250217162627.mp4" class="commend_" autoplay loop ></video></a>-->
+<!--            <span></span>-->
+<!--        </div>-->
+<!--        <div class="vd_box_f">-->
+<!--            <a href="./v/WeChat_20250217162633.mp4" target="_blank"><video src="./v/WeChat_20250217162633.mp4" class="commend_" autoplay loop ></video></a>-->
+<!--            <span></span>-->
+<!--        </div>-->
+<!--        <div class="vd_box_f">-->
+<!--            <a href="./v/WeChat_20250217162638.mp4" target="_blank"><video src="./v/WeChat_20250217162638.mp4" class="commend_" autoplay loop ></video></a>-->
+<!--            <span></span>-->
+<!--        </div>-->
+<!--        <div class="vd_box_f">-->
+<!--            <a href="./v/WeChat_20250217162642.mp4" target="_blank"><video src="./v/WeChat_20250217162642.mp4" class="commend_" autoplay loop ></video></a>-->
+<!--            <span></span>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+
+</body>
+</html>
